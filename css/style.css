@@ -31,12 +31,18 @@
   margin: 0 auto;
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
 }
 
 /******************************************
 /* LAYOUT
 /*******************************************/
+
+/* Navigation */
 header {
   background: #637a89;
   padding: 1rem 2rem;
@@ -85,6 +91,52 @@ header {
 
 .nav__right .donate-btn:hover {
   background: #f2f2f2;
+}
+
+/* Hero section */
+
+.hero {
+  background: #637a89;
+  padding: 12.5rem 0;
+}
+
+.hero__text h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 3.125rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.hero__text p {
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.hero__text span {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.hero__text span a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero__text span a i {
+  border: 2px solid #fff;
+  margin-right: 1rem;
+  border-radius: 50%;
+  padding: 0.6rem;
+}
+.hero__text img {
+  display: block;
+  margin: 0 auto;
 }
 /******************************************
 /* ADDITIONAL STYLES
