@@ -69,50 +69,56 @@ header {
   background: #637a89;
   padding: 1rem 2rem;
 }
-.nav {
-  color: #fff;
-  align-items: center;
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  color: #fff;
   position: relative;
 }
 
-.nav__list {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+.logo {
+  font-size: 1.5rem;
 }
 
-.nav__link {
-  text-decoration: none;
+.toggle-btn {
+  font-size: 1.5rem;
+  background: none;
   color: #fff;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  transition: color 0.3s;
+  border: none;
+  cursor: pointer;
 }
 
-.nav__link:hover {
-  color: #e0e0e0;
+.nav-links {
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 10px;
 }
 
+.nav-links li {
+  border-bottom: 1px solid gray;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px;
+  display: block;
+}
+
+.nav-links.active {
+  display: flex;
+}
 .nav__logo img {
   height: 35px;
   display: block;
   margin: 0 auto;
-}
-
-.nav__right .donate-btn {
-  background: #fff;
-  color: #333;
-  padding: 0.5rem 1rem;
-  font-size: 0.85rem;
-  font-weight: bold;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-}
-
-.nav__right .donate-btn:hover {
-  background: #f2f2f2;
 }
 
 /* Hero section */
@@ -217,10 +223,37 @@ span i {
   cursor: pointer;
 }
 
-.sitemap {
+.sitemap,
+.contribute {
   text-transform: uppercase;
   color: #636465;
 }
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+@media (min-width: 800px) {
+  .learn__more .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+  }
+  .col {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  img {
+    height: 250px;
+  }
+
+  .volunteer .container,
+  .why__section .container {
+    max-width: 600px;
+  }
+  .hero__text img {
+    width: 700px;
+    height: 350px;
+  }
+}
